@@ -24,10 +24,14 @@ const DonationDetails = () => {
       title: 'Thank You!',
       text: 'Your donation has been received.',
     });
-
-    localStorage.setItem('donatedCard', JSON.stringify(donation));
+    const existingDonatedCard = JSON.parse(localStorage.getItem("donatedCard")) || [];
+    const alreadySelected = existingDonatedCard.some((donatedCard)=>donatedCard.id === donation.id);
+    if (!alreadySelected){
+      existingDonatedCard.push(donation);
+      localStorage.setItem('donatedCard', JSON.stringify(existingDonatedCard));
+    }
     // navigate("/donation");
-  };
+  }; 
   return (
     <div className="container mx-auto sm:px-10 md:px-32 mt-16">
       <div className="relative">
