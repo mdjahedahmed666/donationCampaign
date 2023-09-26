@@ -1,13 +1,12 @@
 import './App.css'
+import Banner from './components/Banner/Banner'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <button className="btn btn-secondary">Secondary</button>
+      
     </>
   )
 }
