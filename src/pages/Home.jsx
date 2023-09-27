@@ -4,11 +4,11 @@ import AllCard from '../components/AllCard/AllCard';
 
 const Home = () => {
   return (
-    <>
+    <div className='mb-10'>
     <Banner></Banner>
     <AllCard></AllCard>
 
-    </>
+    </div>
   )
 }
 

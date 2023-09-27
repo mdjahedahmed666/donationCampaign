@@ -1,26 +1,38 @@
-import React from "react";
-import Donation from "../../assets/donation.jpg"
+import React, { useState } from "react";
+import Donation from "../../pages/Donation";
 
 const Banner = () => {
+  // const [search, setSearch] = useState("");
+  // const [filter, setFilter] = useState(Donation);
+  // const hnadleSearch = ()=>{
+  //   if(search.trim() === '') {
+
+  //   }
+    
+  // }
+  // const handleChange = (e)=>{
+  //   setSearch(e.target.value)
+  // }
   return (
     <div
-      className="hero h-[600px]"
-      style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}
+      className="hero h-[400px] md:h-[600px] bg-contain"
+      style={{backgroundImage: 'url(https://i.ibb.co/NsDLNKN/78864487-group-of-volunteer-people-donate-stuff-for-charity.jpg)'}}
     >
-      <div className="hero-overlay bg-opacity-90"></div>
+      <div className="hero-overlay bg-white bg-opacity-90"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="">
-          <h1 className="mb-5 text-5xl font-bold text-black text-center w-full inline">
+          <h1 className="mb-5 text-2xl md:text-5xl font-bold text-black text-center w-full inline">
             I Grow By Helping People In Need
           </h1>
           <div className="form-control mt-5">
             <label className="input-group text-center">
               <input
+              
                 type="text"
                 placeholder="Search here..."
                 className="input input-bordered w-3/4"
               />
-              <span className="bg-[#FF444A]">Search</span>
+              <button className="bg-[#FF444A] w-20">Search</button>
             </label>
           </div>
         </div>

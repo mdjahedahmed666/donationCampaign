@@ -2,14 +2,19 @@ import React, { useEffect, useState } from "react";
 
 const Donation = () => {
   const [donatedCard, setDonatedCard] = useState([]);
+  const [showAll, setShowAll] = useState(false);
   const [cardLength, setCardLength] = useState(4);
-  console.log(donatedCard);
 
   useEffect(() => {
     // Retrieve the stored card details from local storage
     const storedCard = JSON.parse(localStorage.getItem("donatedCard")) || [];
     setDonatedCard(storedCard);
   }, []);
+
+  const handleClick = () => {
+    setShowAll(true);
+    setCardLength(donatedCard.length)
+  }
   
 
   return (
@@ -20,20 +25,24 @@ const Donation = () => {
             <img src={card.picture} alt="Movie" />
           </figure>
           <div className="card-body">
-            <div className="w-20 text-center p-1 h-8">
-            <p className="" style={{ ackgroundColor: card.category_bg }}>{card.category}</p>
+            <div className="w-20 text-center rounded-lg">
+            <p className="rounded-md" style={{ backgroundColor: card.category_bg,color: card.text_color }}>{card.category}</p>
             </div>
-            <h2 className="card-title" style={{ color: card.text_color }}>{card.title}</h2>
-            <p>{card.price}</p>
+            <h2 className="card-title text-2xl font-semibold">{card.title}</h2>
+            <p className="text-base" style={{ color: card.text_color}}>${card.price}</p>
             <div className="card-actions">
-              <button className="btn btn-primary">View Details</button>
+              <button className="btn text-white border-none font-medium" style={{ backgroundColor: card.text_color}}>View Details</button>
             </div>
           </div>
         </div>
       ))}
-  <div className={cardLength===donatedCard.length ? "hidden": "flex justify-end"}>
-    <button onClick={()=>setCardLength(donatedCard.length)} className="btn btn-accent">See all</button>
+  {
+    !showAll && donatedCard.length > cardLength && (
+      <div className={cardLength===donatedCard.length ? "hidden": "flex justify-end"}>
+    <button onClick={handleClick} className="btn btn-accent">See all</button>
   </div>
+    )
+  }
     </div>
   );
 };

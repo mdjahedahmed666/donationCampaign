@@ -19,7 +19,7 @@ const Card = ({ card }) => {
           <img src={picture} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <span style={{ ...categoryStyle, ...textStyle }}>{category}</span>
+          <p className="w-20 text-center p-1 h-8 rounded-md" style={{ ...categoryStyle, ...textStyle }}>{category}</p>
           <h2 className="card-title" style={textStyle}>
             {title}
           </h2>

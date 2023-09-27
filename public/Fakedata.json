@@ -2,133 +2,133 @@
     {
         "id": 1,
       "picture": "../src/assets/Health.png",
-      "title": "Product 1",
+      "title": "Clean water for children",
       "category": "Health",
       "category_bg": "#3498db",
       "card_bg": "#ecf0f1",
       "text_color": "#2ecc71",
       "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
-      "price": "$199.99"
+      "price": 199.99
     },
     {
         "id": 2,
       "picture": "../src/assets/Food.png",
-      "title": "Product 2",
+      "title": "Better Food for Everyone",
       "category": "Food",
       "category_bg": "#e74c3c",
       "card_bg": "#f2c922",
       "text_color": "#9b59b6",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-      "price": "$49.99"
+      "price": 49.99
     },
     {
         "id": 3,
       "picture": "../src/assets/Education.png",
-      "title": "Product 3",
+      "title": "Good education",
       "category": "Education",
       "category_bg": "#1abc9c",
       "card_bg": "#f7dc6f",
       "text_color": "#e67e22",
       "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-      "price": "$79.99"
+      "price": 79.99
     },
     {
         "id": 4,
       "picture": "../src/assets/Clothing.png",
-      "title": "Product 4",
+      "title": "Used Clothing Drive",
       "category": "Clothing",
       "category_bg": "#9b59b6",
       "card_bg": "#d2b4de",
       "text_color": "#3498db",
       "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.",
-      "price": "$29.99"
+      "price": 29.99
     },
     {
         "id": 5,
       "picture": "../src/assets/Health.png",
-      "title": "Product 5",
+      "title": "Clean water for children",
       "category": "Health",
       "category_bg": "#3498db",
       "card_bg": "#ecf0f1",
       "text_color": "#2ecc71",
       "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.",
-      "price": "$39.99"
+      "price": 39.99
     },
     {
         "id": 6,
       "picture": "../src/assets/Food.png",
-      "title": "Product 6",
+      "title": "Better Food for Everyone",
       "category": "Food",
       "category_bg": "#e74c3c",
       "card_bg": "#f2c922",
       "text_color": "#9b59b6",
       "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
-      "price": "$149.99"
+      "price": 149.99
     },
     {
         "id": 7,
       "picture": "../src/assets/Education.png",
-      "title": "Product 7",
+      "title": "Good education",
       "category": "Education",
       "category_bg": "#1abc9c",
       "card_bg": "#f7dc6f",
       "text_color": "#e67e22",
       "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.",
-      "price": "$69.99"
+      "price": 69.99
     },
     {
         "id": 8,
       "picture": "../src/assets/Clothing.png",
-      "title": "Product 8",
+      "title": "Used Clothing Drive",
       "category": "Clothing",
       "category_bg": "#9b59b6",
       "card_bg": "#d2b4de",
       "text_color": "#3498db",
       "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.",
-      "price": "$299.99"
+      "price": 299.99
     },
     {
         "id": 9,
       "picture": "../src/assets/Health.png",
-      "title": "Product 9",
+      "title": "Clean water for children",
       "category": "Health",
       "category_bg": "#3498db",
       "card_bg": "#ecf0f1",
       "text_color": "#2ecc71",
       "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.",
-      "price": "$59.99"
+      "price": 59.99
     },
     {
         "id": 10,
       "picture": "../src/assets/Food.png",
-      "title": "Product 10",
+      "title": "Better Food for Everyone",
       "category": "Food",
       "category_bg": "#e74c3c",
       "card_bg": "#f2c922",
       "text_color": "#9b59b6",
       "description": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis.",
-      "price": "$89.99"
+      "price": 89.99
     },
     {
         "id":11,
       "picture": "../src/assets/Education.png",
-      "title": "Product 11",
+      "title": "Good education",
       "category": "Education",
       "category_bg": "#1abc9c",
       "card_bg": "#f7dc6f",
       "text_color": "#e67e22",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-      "price": "$24.99"
+      "price": 24.99
     },
     {
         "id":12,
       "picture": "../src/assets/Clothing.png",
-      "title": "Product 12",
+      "title": "PUsed Clothing Drive",
       "category": "Clothing",
       "category_bg": "#9b59b6",
       "card_bg": "#d2b4de",
       "text_color": "#3498db",
       "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-      "price": "$49.99"
+      "price": 49.99
     }
   ]

@@ -43,17 +43,14 @@ const DonationDetails = () => {
         <div className="absolute inset-x-0 bottom-0 bg-black opacity-70 h-1/4"></div>
         <button onClick={handleDonateClick}
           style={buttonStyle}
-          className="btn absolute bottom-10 left-10"
+          className="btn border-none absolute bottom-10 left-10 text-xl font-semibold text-white"
         >
-          Donate {donation.price}
+          Donate ${donation.price}
         </button>
       </div>
-      {/* <div className="relative bottom-12 left-16 right-56 bg-black opacity-90">
-        <button style={buttonStyle} className="btn relative bottom-20 left-32">Secondary</button>
-        </div> */}
       <div className="text-left">
-        <h2 className="font-bold">{donation.title}</h2>
-        <p>{donation.description}</p>
+        <h2 className="font-bold text-4xl mt-12 mb-6">{donation.title}</h2>
+        <p className="font-normal mb-10">{donation.description}</p>
       </div>
     </div>
   );
