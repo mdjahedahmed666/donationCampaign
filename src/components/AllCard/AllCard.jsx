@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../Card/Card';
 
-const AllCard = () => {
+const AllCard = ({search}) => {
     const [cards, setCards] = useState([]);
     useEffect(() => {
         const fetchData = async()=>{
@@ -11,10 +11,11 @@ const AllCard = () => {
         } 
         fetchData();
     },[]);
+    const filter = cards.filter((card) => card.category.toLowerCase().includes(search.toLowerCase()));
   return (
     <div className='container mx-auto sm:px-10 md:px-32 mt-16'>
     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2'>
-        {cards.map((card, index)=>(
+        {filter.map((card, index)=>(
             <Card key={index} card={card}></Card>
         ))}
     </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Donation = () => {
   const [donatedCard, setDonatedCard] = useState([]);
@@ -31,7 +32,10 @@ const Donation = () => {
             <h2 className="card-title text-2xl font-semibold">{card.title}</h2>
             <p className="text-base" style={{ color: card.text_color}}>${card.price}</p>
             <div className="card-actions">
-              <button className="btn text-white border-none font-medium" style={{ backgroundColor: card.text_color}}>View Details</button>
+              <Link to={`/donation/${card.id}`}>
+            <button className="btn text-white border-none font-medium" style={{ backgroundColor: card.text_color}}>View Details</button>
+            </Link>
+              
             </div>
           </div>
         </div>

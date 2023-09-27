@@ -1,18 +1,13 @@
 import React, { useState } from "react";
-import Donation from "../../pages/Donation";
 
-const Banner = () => {
-  // const [search, setSearch] = useState("");
-  // const [filter, setFilter] = useState(Donation);
-  // const hnadleSearch = ()=>{
-  //   if(search.trim() === '') {
-
-  //   }
-    
-  // }
-  // const handleChange = (e)=>{
-  //   setSearch(e.target.value)
-  // }
+const Banner = ({setSearch}) => {
+  const [searchValue, setSearchValue] = useState();
+  const handleSearch = ()=>{
+setSearch(searchValue);  
+  }
+  const handleChange = (e)=>{
+    setSearchValue(e.target.value);
+  }
   return (
     <div
       className="hero h-[400px] md:h-[600px] bg-contain"
@@ -27,12 +22,13 @@ const Banner = () => {
           <div className="form-control mt-5">
             <label className="input-group text-center">
               <input
-              
+              value={searchValue}
+              onChange={handleChange}
                 type="text"
                 placeholder="Search here..."
                 className="input input-bordered w-3/4"
               />
-              <button className="bg-[#FF444A] w-20">Search</button>
+              <button onClick={handleSearch} className="bg-[#FF444A] w-20">Search</button>
             </label>
           </div>
         </div>
