@@ -16,7 +16,7 @@ const Card = ({ card }) => {
     <div className="card shadow-xl" style={cardStyle}>
       <Link to={`/donation/${id}`}>
         <figure className="w-full">
-          <img src={picture} alt="Shoes" />
+          <img className="w-full" src={picture} alt="Shoes" />
         </figure>
         <div className="card-body">
           <p className="w-20 text-center p-1 h-8 rounded-md" style={{ ...categoryStyle, ...textStyle }}>{category}</p>

@@ -33,11 +33,11 @@ const DonationDetails = () => {
     // navigate("/donation");
   }; 
   return (
-    <div className="container mx-auto sm:px-10 md:px-32 mt-16">
+    <div className="container mx-auto px-4 md:px-32 mt-16">
       <div className="relative">
         <div className="flex justify-center">
           <div className="container">
-            <img className="w-full h-[600px]" src={donation.picture} alt="" />
+            <img className="w-full h-[400px] md:h-[600px]" src={donation.picture} alt="" />
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0 bg-black opacity-70 h-1/4"></div>
@@ -49,7 +49,7 @@ const DonationDetails = () => {
         </button>
       </div>
       <div className="text-left">
-        <h2 className="font-bold text-4xl mt-12 mb-6">{donation.title}</h2>
+        <h2 className="font-bold text-2xl md:text-4xl mt-12 mb-6">{donation.title}</h2>
         <p className="font-normal mb-10">{donation.description}</p>
       </div>
     </div>

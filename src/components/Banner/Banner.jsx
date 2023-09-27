@@ -3,11 +3,13 @@ import React, { useState } from "react";
 const Banner = ({setSearch}) => {
   const [searchValue, setSearchValue] = useState();
   const handleSearch = ()=>{
-setSearch(searchValue);  
+setSearch(searchValue); 
+setSearchValue(''); 
   }
   const handleChange = (e)=>{
     setSearchValue(e.target.value);
   }
+  
   return (
     <div
       className="hero h-[400px] md:h-[600px] bg-contain"
@@ -16,7 +18,7 @@ setSearch(searchValue);
       <div className="hero-overlay bg-white bg-opacity-90"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="">
-          <h1 className="mb-5 text-2xl md:text-5xl font-bold text-black text-center w-full inline">
+          <h1 className="mb-5 text-2xl lg:text-5xl font-bold text-black text-center w-full inline">
             I Grow By Helping People In Need
           </h1>
           <div className="form-control mt-5">

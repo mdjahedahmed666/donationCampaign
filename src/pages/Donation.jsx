@@ -19,21 +19,21 @@ const Donation = () => {
   
 
   return (
-    <div className="container mx-auto sm:px-10 md:px-32 mt-16 gap-4 grid grid-cols-1 md:grid-cols-2">
+    <div className="container mx-auto px-4 md:px-20 lg:px-32 mt-16 gap-4 grid grid-cols-1 lg:grid-cols-2">
       {donatedCard.slice(0,cardLength).map((card, index) => (
-        <div className="card card-side shadow-xl" style={{ backgroundColor: card.card_bg }}>
-          <figure>
-            <img src={card.picture} alt="Movie" />
+        <div key={index} className="card card-side shadow-xl" style={{ backgroundColor: card.card_bg }}>
+          <figure className="w-1/2 md:w-full">
+            <img src={card.picture} alt={card.title} />
           </figure>
           <div className="card-body">
             <div className="w-20 text-center rounded-lg">
             <p className="rounded-md" style={{ backgroundColor: card.category_bg,color: card.text_color }}>{card.category}</p>
             </div>
-            <h2 className="card-title text-2xl font-semibold">{card.title}</h2>
-            <p className="text-base" style={{ color: card.text_color}}>${card.price}</p>
+            <h2 className="card-title text-lg lg:text-2xl font-semibold">{card.title}</h2>
+            <p className="text-sm lg:text-base" style={{ color: card.text_color}}>${card.price}</p>
             <div className="card-actions">
               <Link to={`/donation/${card.id}`}>
-            <button className="btn text-white border-none font-medium" style={{ backgroundColor: card.text_color}}>View Details</button>
+            <button className="btn text-white border-none text-sm lg:text-md font-medium " style={{ backgroundColor: card.text_color}}>View Details</button>
             </Link>
               
             </div>
@@ -42,7 +42,7 @@ const Donation = () => {
       ))}
   {
     !showAll && donatedCard.length > cardLength && (
-      <div className={cardLength===donatedCard.length ? "hidden": "flex justify-end"}>
+      <div className={cardLength===donatedCard.length ? "hidden": "flex justify-center md:justify-end"}>
     <button onClick={handleClick} className="btn btn-accent">See all</button>
   </div>
     )

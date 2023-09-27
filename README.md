@@ -9,3 +9,8 @@ Currently, two official plugins are available:
 # b8a8-donation-campaign-mdjahedahmed666
 # b8a8-donation-campaign-mdjahedahmed666
 # b8a8-donation-campaign-mdjahedahmed666
+
+Three projects feature:
+1.Homepage with donation card: Each card displays a picture, category and title. It is easy for user to identify the card that they want to donate to.
+2.Donation details page: Clicking on the card user will navigate to the donation details page . Where they will see the details on the donation. the can donate by clicking on donate button.
+3. Donation statistics page: The pie chart dynamically display the user's donation percentage against the total donation.
