@@ -19,7 +19,7 @@ const Donation = () => {
   
 
   return (
-    <div className="container mx-auto px-4 md:px-20 lg:px-32 mt-16 gap-4 grid grid-cols-1 lg:grid-cols-2">
+    <div className="container mx-auto px-4 md:px-20 lg:px-32 mt-16 gap-4 grid grid-cols-1 lg:grid-cols-2 mb-16">
       {donatedCard.slice(0,cardLength).map((card, index) => (
         <div key={index} className="card card-side shadow-xl" style={{ backgroundColor: card.card_bg }}>
           <figure className="w-1/2 md:w-full">
@@ -34,8 +34,7 @@ const Donation = () => {
             <div className="card-actions">
               <Link to={`/donation/${card.id}`}>
             <button className="btn text-white border-none text-sm lg:text-md font-medium " style={{ backgroundColor: card.text_color}}>View Details</button>
-            </Link>
-              
+            </Link> 
             </div>
           </div>
         </div>
